@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="base_m.css?version=201305161806" />
+<link rel="stylesheet" type="text/css" href="hiNet.css?version=201305161806" />
+</head>
+<body>
+    <div class="input-box" style="position:relative;height:40px;"> 
+		<a href="#" id="provinceSelect" onclick="return false;"></a> 
+		<input name="cityName_input" type="text" class="inp-city" id="cityName_input" 
+			autocomplete="off" style="color: rgb(178, 178, 178);">
+		<input type="hidden" id="cityId_input" name="cityId_input" value="">
+		<input type="hidden" id="area" name="area" value="">
+          
+          <!-- 地区弹出层   --//start -->
+          <div id="provinces" class="location-box  location_box02" style="display:none;">
+            <ul class="tab-list">
+              <li class="select-tab"></li>
+              <li class="select tab li-common" index="0"><a href="#">常用</a></li>
+              <li class="tab li-province" index="1"><a href="#">省份</a></li>
+              <li class="tab li-city" index="2"><a href="#">城市</a></li>
+              <li class="tab li-county" index="3"><a href="#">县区</a></li>
+            </ul>
+            <div class="tab-box  bcwhite"> <a class="place city" href="#" code="31">上海市</a> <a class="place city" href="#" code="440300">深圳市</a> <a class="place city" href="#" code="11">北京市</a> <a class="place city" href="#" code="440100">广州市</a> <a class="place city" href="#" code="320500">苏州市</a> <a class="place city" href="#" code="510100">成都市</a> <a class="place city" href="#" code="441900">东莞市</a> <a class="place city" href="#" code="330200">宁波市</a> <a class="place city" href="#" code="12">天津市</a> <a class="place city" href="#" code="330100">杭州市</a> <a class="place city" href="#" code="370200">青岛市</a> <a class="place city" href="#" code="50">重庆市</a> <a class="place city" href="#" code="420100">武汉市</a> <a class="place city" href="#" code="410100">郑州市</a> <a class="place" href="#" onclick="$('.li-province').click();return false;">更多&gt;</a></div>
+            <div class="hidden tab-box province-box  bcwhite">
+              <dl>
+                <dt>A-G</dt>
+                <dd> <a class="place province" href="#" code="34">安徽</a> <a class="place province" href="#" code="11">北京</a> <a class="place province" href="#" code="50">重庆</a> <a class="place province" href="#" code="35">福建</a> <a class="place province" href="#" code="62">甘肃</a> <a class="place province" href="#" code="44">广东</a> <a class="place province" href="#" code="45">广西</a> <a class="place province" href="#" code="52">贵州</a> </dd>
+              </dl>
+              <dl>
+                <dt>H-K</dt>
+                <dd> <a class="place province" href="#" code="46">海南</a> <a class="place province" href="#" code="13">河北</a> <a class="place province" href="#" code="41">河南</a> <a class="place province" href="#" code="23">黑龙江</a> <a class="place province" href="#" code="42">湖北</a> <a class="place province" href="#" code="43">湖南</a> <a class="place province" href="#" code="22">吉林</a> <a class="place province" href="#" code="32">江苏</a> <a class="place province" href="#" code="36">江西</a> </dd>
+              </dl>
+              <dl>
+                <dt>L-S</dt>
+                <dd> <a class="place province" href="#" code="21">辽宁</a> <a class="place province" href="#" code="15">内蒙古</a> <a class="place province" href="#" code="64">宁夏</a> <a class="place province" href="#" code="63">青海</a> <a class="place province" href="#" code="37">山东</a> <a class="place province" href="#" code="14">山西</a> <a class="place province" href="#" code="61">陕西</a> <a class="place province" href="#" code="31">上海</a> <a class="place province" href="#" code="51">四川</a> </dd>
+              </dl>
+              <dl style="height:25px;margin-bottom:0px;">
+                <dt>T-Z</dt>
+                <dd> <a class="place province" href="#" code="12">天津</a> <a class="place province" href="#" code="54">西藏</a> <a class="place province" href="#" code="65">新疆</a> <a class="place province" href="#" code="53">云南</a> <a class="place province" href="#" code="33">浙江</a> </dd>
+              </dl>
+            </div>
+            <div class="hidden tab-box  bcwhite"></div>
+            <div class="hidden tab-box  bcwhite"></div>
+          </div>
+          <!-- i--d--provinces --> 
+          <!-- 地区弹出层   --//end --> 
+          
+        </div>
+       
+
+
+<script type="text/javascript" src="jquery-1.7.1.min.js?version=201305161806"></script> 
+<script type="text/javascript" src="city02.js?version=201305161806"></script> 
+<script type="text/javascript" src="area2012.js?version=201305131326"></script>
+<script type="text/javascript" >
+$(function(){
+
+	selectCity();  //页面载入即执行 选择城市
+
+});
+
+/* 选择城市 */
+function selectCity(){
+	//cityinit("provinces",0,getKeyword);
+
+	$("#provinceSelect").click(function(e){
+		e.stopPropagation();
+		if(!$("#provinces").is(":hidden")){
+			$("#provinces").hide();
+		}else{
+			$("#provinces").show();
+		}
+	})
+}
+</script>
+</body>
+</html>

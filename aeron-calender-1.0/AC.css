@@ -1,0 +1,89 @@
+
+
+#divOut {
+    position: absolute;
+    width: 210px;
+    z-index: 9999;
+    border: 1px solid #42b76b;
+}
+
+#divHeader {
+    text-align: center;
+    background-color: #add8e6;
+}
+#divHeader  select{
+	border: none;
+	cursor: pointer;
+}
+#divHeader label{
+	/* 盖住select的下拉按钮 */
+	margin-left: -20px;
+	/* 和divHeader的背景相同 */
+	background-color: #add8e6;
+	/* 完全盖住select下边白线  */
+	border-bottom: 2px solid #add8e6;
+	/* 完全盖住select右边白线  */
+	border-right: 4px solid #add8e6;
+}
+
+#divHeader tt {
+    width: 25px;
+	font-weight:bolder;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#divWeek {
+    background-color: #8ad0f1;
+}
+
+#divMain {
+    background-color: #d3e9f0;
+}
+
+#divWeek a, #divMain a, #divMain b {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#divHeader tt:hover, #divMain a:hover, #divFooter a:hover {
+    cursor: pointer;
+    color: red;
+    background-color: #89e8e9;
+}
+
+#divFooter {
+    background-color: #95c1ec;
+    text-align: center;
+}
+
+#divFooter #clear {
+    float: left;
+    text-align: center;
+    width: 35px;
+    display: inline-block;
+}
+
+#divFooter #today {
+    clear: both;
+}
+
+#divFooter #cancel {
+    width: 35px;
+    float: right;
+    text-align: center;
+    display: inline-block;
+}
+
+.current {
+    background-color: #93e4e0;
+}
+
+.weekend {
+    color: #9f08fe;
+}

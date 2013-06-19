@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Conten-Type" content="text/html; charset=utf8"/>
+        <link rel="stylesheet" href="AC.css" type="text/css" />
+        <script type="text/javascript" src="AC.js"></script>
+        <style tyle="text/css">
+            body {
+                background-color: #ddffff;
+            }
+            .middle {
+                margin-top: 100px;
+                text-align: center;
+            }
+            
+            .middle div {
+            	margin:50px;
+				width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="middle">
+            <div>
+                <label for="date">请选择日期：</label>
+                <input type="text" onclick="MyCalender.getInstance().main(this)"/>
+            </div>
+            <div>
+                <label for="date">请选择日期：</label>
+                <input type="text" onclick="new AC(this)"/>
+            </div>
+            <div>
+                <label for="date">请选择日期：</label>
+                <input type="text" onclick="MyCalender.getInstance().main(this)"/>
+            </div>
+            <div>
+                <label for="date">请选择日期：</label>
+                <input type="text" onclick="new AC(this)"/>
+            </div>
+        </div>
+    </body>
+</html>

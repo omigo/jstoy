@@ -1,0 +1,226 @@
+/*全局变量*/
+* { -webkit-text-size-adjust:none; }
+html { overflow-y:scroll }
+html, body { text-align:left; }
+body, input, textarea, select, button { font:12px "Microsoft YaHei", Verdana, arial, sans-serif; line-height:22px }
+input, textarea, select, button { vertical-align:middle }
+body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, table { margin:0; padding:0 }
+img { vertical-align:middle; border:0 }
+h1, h2, h3, h4, h5, h6 { font-size:1em }
+ul, dl { list-style:none }
+a { outline:none; text-decoration:none; color:#448FF4 }
+a:hover { outline:none; text-decoration:underline; }
+a { blur:expression(this.blur());
+}
+.w960 { clear:both; margin:auto; width:960px }
+.w950 { clear:both; margin:auto; width:950px }
+.wfull { clear:both; margin:auto; width:100% }
+.clear { clear:both; font-size:0; line-height:0; height:10px }
+.box { clear:both; height:0px }
+*html .box { display:inline; clear:both }
+.fontblue { color:#317ee7 !important }
+.fontred { color:#F00 !important }
+/*常用样式简写*/
+.fl { float:left }
+.fr { float:right }
+.hide { display:none }
+.mt5px_ie6 { _margin-top:5px; }
+.mt6px_ie6 { _margin-top:6px; }
+.mt10px { margin-top:10px }
+.mb10px { margin-bottom:10px }
+.mr10px { margin-right:10px }
+.p5px { padding:5px }
+.p10px { padding:10px }
+.pt10px { padding-top:10px }
+.p20px { padding:20px }
+.pl10px { padding-left:10px }
+.pl40px { padding-left:40px }
+.pl5em { padding-left:5em }
+.t2em { text-indent:2em }
+.hidden { display:none }
+.hide_word { text-indent:-65535px; overflow:hidden }
+.pointer { cursor:pointer }
+.yahei { font-family:"Microsoft YaHei", arial, sans-serif; }
+/*字体样式*/
+.font12px { font-size:12px }
+.font14px { font-size:14px }
+.font16px { font-size:16px }
+.fontnormal { font-weight:normal }
+/*头部*/
+.menu-top { position:absolute; top:0px; right:10px; z-index:10; line-height:34px; height:34px; color:#90bfff; }
+.menu-top a { color:#333 }
+.header { z-index:9; position:relative; }
+.sub-header { height:87px; }
+.logo { float:left; height:80px; width:180px; margin-top: 8px; }
+.sub-logo { float:right; height:35px; width:90px; margin-top:2px; }
+.top468-60 { z-index:9; float:left; height:92px; width:300px; text-align:center; overflow:hidden }
+#frame_logout { position:absolute; left:-1000px }
+.top-float-tips1 { position:absolute; top:30px; right:175px; display:block; padding:10px 10px 0; width:119px; height:43px; line-height:18px; color:#f26100; background:url("http://cdn.kuaidi100.com/images/bg_tips_box.png") }
+.top-float-tips1 a { color:#f26100 }
+.top-float-tips2 { position:absolute; z-index:10; top:33px; right:44px; display:block; padding:4px 0 4px 20px; width:147px; height:18px; line-height:18px; color:#f26100; background:url("http://cdn.kuaidi100.com/images/bg_tips_box.png") 0 -74px no-repeat; }
+.top-float-tips2 a { color:#f26100 }
+/*导航栏 - 客服中心*/
+#freeDiv { height:40px; padding-left:10px; }
+.tabSpan { position:relative; z-index:10; width:80px; height:20px }
+.tabSpan-w { width:105px; }
+.tabSpan .service-link, .tabSpan .more-link { position:absolute; z-index:13; top:8px; *top:9px;
+_top:7px; left:10px; line-height:18px; padding-right:14px; vertical-align:middle; white-space:nowrap; cursor:pointer; color:#333; background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -20px no-repeat; *background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -21px no-repeat;
+_background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -20px no-repeat; }
+.tabSpan .service-link02 { position:absolute; z-index:13; top:8px; *top:9px;
+_top:7px; left:10px; line-height:18px; padding-right:20px; vertical-align:middle; white-space:nowrap; cursor:pointer; color:#333; background:url("http://cdn.kuaidi100.com/images/ico_header.png") 53px -20px no-repeat; background:url("http://cdn.kuaidi100.com/images/ico_header.png") 52px -20px no-repeat\9; }
+.tabSpan .service-link-open { background:url("http://cdn.kuaidi100.com/images/ico_header.png") right 7px no-repeat; *background:url("http://cdn.kuaidi100.com/images/ico_header.png") right 5px no-repeat;
+_background:url("http://cdn.kuaidi100.com/images/ico_header.png") right 7px no-repeat; }
+.tabSpan .service-link-open02 { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 53px 6px no-repeat; background:url("http://cdn.kuaidi100.com/images/ico_header.png") 52px 6px no-repeat\9; }
+.tabSpan .more-link { display:block; width:63px; padding-left:12px; background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -20px no-repeat; *background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -22px no-repeat;
+_background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -20px no-repeat; }
+.tabSpan .more-link-open { background:url("http://cdn.kuaidi100.com/images/ico_header.png") right 7px no-repeat; *background:url("http://cdn.kuaidi100.com/images/ico_header.png") right 5px no-repeat;
+_background:url("http://cdn.kuaidi100.com/images/ico_header.png") right 7px no-repeat; }
+.tabSpan a:hover { text-decoration:none }
+.tabSpan ul { position:absolute; top:5px; left:-2px; zoom:1; z-index:12; padding:24px 0 0 12px; width:68px; text-align:left; line-height:28px; border:1px solid #90bfff; background-color:#FFF; }
+#serviceList02 { position:absolute; top:5px; left:-16px; zoom:1; z-index:12; padding:24px 0 4px 12px; width:102px; text-align:left; line-height:28px; border:1px solid #90bfff; background-color:#FFF; }
+#serviceList02 a { padding-left:13px; text-align:left; }
+.tabSpan ul#moreList { left:10px; width:84px; height:60px; }
+.tabSpan ul a { color:#878787 }
+.tabSpan ul a:hover { color:#317ee7 }
+.phoneIconDis { position:absolute; z-index:300; top:10px; right:83px; }
+/* 
+.menu-top #weiboLink{ 
+padding-left:25px;
+background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -69px no-repeat;
+}  这是以前 关注新浪微博的 css  20121015  wgd*/
+#weiboLink { padding-left:16px; background-image:url("http://cdn.kuaidi100.com/images/distribution/subtle.gif"); background-repeat:no-repeat; background-position:0px 11px; background-position:0px 9px\9; _background-position:0px 11px; }
+/*公告*/
+#afficheTips { position: absolute; top:16px; right:0px; width:650px; }
+#afficheTips p { padding-left:10px; max-height:40px; min-height:20px; _height:expression(this.scrollHeight < 00 ? "20px" :( this.scrollHeight > 40 ? "40px" :"auto"));
+font-size:12px; font-weight:normal; line-height:1.8em; text-align:left; overflow:hidden; color:#000 }
+/*菜单*/
+.nav { height:36px; overflow:hidden; background-color:#448ef3 }
+.nav a:hover, .nav a:link, .nav a:visited, .nav a:active, .sub-nav a:hover, .sub-nav a:link, .sub-nav a:visited, .sub-nav a:active { text-decoration:none }
+.nav-box { padding:0; height:36px; line-height:36px; }
+.nav-box a { display:block; padding:0 35px; height:36px; font-size:16px; font-weight:normal; color:#FFF; border-left:2px solid #448ef3; border-right:2px solid #448ef3 }
+.nav-box a:hover { color:#FFF; background-color:#6ca8fa; border-left:2px solid #6ca8fa; border-right:2px solid #6ca8fa }
+.nav-box a.nav-select { background-color:#ff9e40; border-left:2px solid #FFF; border-right:2px solid #FFF }
+.nav-box #apiQuery { padding-left:70px; background:url("http://cdn.kuaidi100.com/images/ico_opacity.png") 20px -1px no-repeat; _padding-left:35px; _background:none }
+.nav-box a#apiQuery:hover { background:url("http://cdn.kuaidi100.com/images/ico_opacity.png") 20px -1px no-repeat #6ca8fa; _background:#6ca8fa }
+.nav-box a#apiQuery.nav-select { background:url("http://cdn.kuaidi100.com/images/ico_opacity.png") 20px -1px no-repeat #ff9e40; _background:#ff9e40 }
+.sub-nav { height:30px; border-bottom:2px solid #d7e7ff; background-color:#e8f1ff }
+.sub-nav-box { position:relative; padding-left:35px; height:30px; line-height:30px; }
+.sub-nav-box a { display:block; margin:0 20px; height:30px; font-size:14px; color:#317ee7; }
+.sub-nav-box a:hover { color:#317ee7; }
+.sub-nav-box .underline { position:absolute; top:30px; display:block; height:2px; overflow:hidden; background-color:#448ef3 }
+.menu-goto { padding-right:20px; background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -96px no-repeat }
+.link-goto { padding-right:20px; background:url("http://cdn.kuaidi100.com/images/ico_header.png") right -101px no-repeat }
+.container { z-index:2; }
+/*尾部*/
+.footer { position:relative; z-index:1; text-align:center; height:100px; border-top:1px solid #D9D9D9 }
+.footer ul { list-style-type:none }
+.footer li { float:left }
+.footer li a { color:#333 }
+.footer .weiboLink { padding-left:25px; background:url("http://cdn.kuaidi100.com/images/ico_header.png") 5px -72px no-repeat; }
+.kingdee-info { position:absolute; top:45px; left:210px }
+.kingdee-logo { margin-right:10px }
+.kingdee-logo img { margin-top:5px }
+.valid { position:absolute; top:15px; left:20px; margin:8px auto; width:175px; height:40px }
+.valid li { float:left; }
+.valid li a { display:block; width:50px; height:50px; }
+.valid .sznet01 { background:url("http://cdn.kuaidi100.com/images/sznet.gif"); }
+.valid .sznet02 { background:url("http://cdn.kuaidi100.com/images/sznet.gif") -50px 0; }
+.valid .sznet03 { background:url("http://cdn.kuaidi100.com/images/sznet.gif") -100px 0; }
+.foot-icons { clear:both; border-top:1px solid #D9D9D9; min-width:960px }
+.foot-icons-box { padding:15px 0px 0px; }
+.foot-icons-item { margin-right:20px; float:left; color:#878787 }
+.foot-icons-item a { color:#448ff4 }
+.foot-icons-item-header { padding-left:35px; height:26px; width:180px; line-height:26px; font-size:14px; color:#333333 }
+.foot-icons-1 { background:url("http://cdn.kuaidi100.com/images/ico_footer.png") 0px -2px no-repeat }
+.foot-icons-2 { background:url("http://cdn.kuaidi100.com/images/ico_footer.png") 0px -41px no-repeat }
+.foot-icons-3 { background:url("http://cdn.kuaidi100.com/images/ico_footer.png") 0px -78px no-repeat }
+.foot-icons-4 { background:url("http://cdn.kuaidi100.com/images/ico_footer.png") 0px -112px no-repeat }
+.foot-icons .link-goto { padding:4px 20px 4px 0 }
+.helpcenter { border-left:1px solid #D9D9D9; margin-right:0; padding-left:25px; height: 128px; width: 205px; }
+/*尾部菜单*/
+.foot-menu { font-size:12px; position:absolute; z-index:10; width:760px; top:10px; left:200px; }
+.foot-menu ul { list-style:none; }
+.foot-menu li { float:left; position:relative; }
+.foot-menu a { display:block; padding:2px 6px; margin:3px; text-decoration:none; }
+.foot-menu ul li a { color:#448FF4 }
+.foot-menu a:hover { color:#F21818; text-decoration:underline; }
+/*功能*/
+.favorites { padding-left:15px }
+.wait { line-height:30px; text-align:center; color:#0F90CF; background-image: url(http://cdn.kuaidi100.com/images/ajax-loader.gif); background-repeat: no-repeat; background-position: 198px 7px; }
+.inp { height:33px; padding:0px 8px!important; padding-top:3px; font:24px Verdana; border:1px solid #BCBCBC }
+.inp-a { line-height:24px; height:24px; font-size:14px; border:1px solid #DDD }
+.inp-b { line-height:24px; font-size:14px; resize:none; border:1px solid #DDD }
+.inp-c { line-height:27px; font-size:14px; height:27px; width:263px; padding-top:0px; border:1px solid #9FC0D1 }
+.links-pre { padding:8px; width:540px!important; width:530px; background-color:#F1F1F1; border:1px solid #CCC }
+.link-textarea { height:30px; line-height:30px; width:540px }
+.btn-out, .btn-over, .btn-out2, .btn-over2 { height:36px; line-height:36px; font-size:16px; font-weight:bold; text-align:center; cursor:pointer; letter-spacing:1px; padding:0px 0px 1.5px 5px; margin-top:0px!important; margin-top:3px; overflow:hidden; border:0px; color:#FFF }
+/*提示信息*/
+.tips { padding:8px; line-height:24px; background-color:#FFFAE2; border:1px solid #F5E190; margin-top:10px; }
+.tips2 { padding:5px; line-height:22px; background-color:#F3FBFE; border:1px solid #D7EDF8 }
+.tips-close { display:block; float:right; height:17px; width:17px; margin-top:-3px!important; margin-right:-2px; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") no-repeat left top }
+.tips-close:hover { background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") no-repeat -19px top }
+.tips-close-2 { display:block; float:right; height:17px; width:17px; margin-top:-3px!important; margin-right:-2px; display:block; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") no-repeat -18px -63px }
+.tips-close-2:hover { background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") no-repeat left -63px }
+.tips dl { margin-left:36px }
+.tips dt { font-weight:bold }
+.tips dd { font-family:"宋体" }
+.tips .icon { float:left; width:35px; height:35px; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") no-repeat left -28px }
+.tips p { line-height:30px; padding-left:35px; font-weight:bold; font-size:12px; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") no-repeat left -28px; color:#F00 }
+.tips p#errorMessage { padding-left:0; background:none }
+.tips .tips-icon-2 { padding-left:50px; font-size:14px; font-weight:normal; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") 15px -168px no-repeat; }
+.tips .tips-p-2 { padding-left:50px; font-size:14px; font-weight:normal; color:#878787; background:none }
+.tips .tips-p-2 span#tips-com-name, .tips .tips-p-2 span#tips-kuaidi-num { display:inline-block; margin:5px 0 15px; padding:0 10px; width:110px; height:35px; line-height:35px; overflow:hidden; vertical-align:top; font-size:14px; font-weight:bold; color:#656565; border:1px solid #bcbcbc; background-color:#FFFFFF; }
+.tips .tips-p-2 span#tips-kuaidi-num { width:190px; border-left:none }
+.tips .copy-span { position:relative; display:inline-block; margin:5px 10px 15px; line-height:37px; vertical-align:middle; }
+.tips .tips-a-wrong { display:inline-block; margin-right:15px; width:102px; height:32px; text-align:center; text-decoration:none; font-weight:bold; color:#FFFFFF; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") 0 -209px no-repeat }
+.tips .tips-a-right { display:inline-block; width:177px; height:32px; text-align:center; font-weight:bold; text-decoration:none; color:#FFFFFF; background:url("http://cdn.kuaidi100.com/images/ico_tips.gif") 0 -254px no-repeat }
+/*绿色提示信息框*/
+.tips-green { display:inline-block; float:right; height:20px; margin-right:40px; padding:2px 10px; line-height:20px; color:#FFF; background-color:#68af02; }
+/*斜角框*/
+.div-border { padding:10px; border:1px solid #8FBFFF }
+.div-title { padding-bottom:10px; height:20px; text-align:left; font-size:18px; font-weight:normal; color:#448EF1; }
+.div-border p { color:#0F6B99 }
+.div-barlist p a { color:#787878 }
+/*按钮通用*/
+a.btn-default { display:block; line-height:29px; padding:5px 10px; text-align:center; height:29px; width:82px; font-size:14px; font-weight:bold; text-decoration:none; background-color:#317EE8; color:#FFF }
+a.btn-default:hover, a.btn-default:active, a.btn-default:focus { text-decoration:none; background-color:#8FBFFD; }
+a.btn-none { display:block; line-height:29px; padding:5px 10px; vertical-align:middle }
+/*确认框"确定和取消"按钮*/
+.btn-ok { display:inline-block; margin-right:10px; width:56px; height:28px; line-height:28px; text-align:center; color:#FFF; border:none; background-color:#81BE01 }
+.btn-cancel { display:inline-block; width:56px; height:28px; line-height:28px; text-align:center; color:#fff; border:none; background-color:#81BE01 }
+a.btn-ok:hover, a.btn-cancel:hover { color:#FFF }
+/*metro按钮*/
+.inp-metro { width:414px; height:30px; line-height:30px; vertical-align:middle; padding:4px 8px; font-size:18px; color:#333; border:1px solid #BCBCBC }
+.btn-query { display:inline-block; padding:0; width:148px; height:40px; line-height:40px; overflow:hidden; vertical-align:middle; text-indent:-65535px; cursor:pointer; border:none; background:url("http://cdn.kuaidi100.com/images/btn_metro.png") 0 0 no-repeat; }
+input.btn-query:hover { background:url("http://cdn.kuaidi100.com/images/btn_metro.png") -152px 0 no-repeat; }
+/*反馈快捷入口*/
+.fix-box-bottom { position:fixed; z-index:999; bottom:10px; right:10px; z-index:500 }
+.fix-box-bottom { _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)-10));
+_right:auto; _left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft, 10)||0)-(parseInt(this.currentStyle.marginRight, 10)||0)-10);
+}
+.fb-box { position:relative; width:260px; height:180px; background:url("http://cdn.kuaidi100.com/images/feedback.png") -147px -3px no-repeat }
+.fb-box .fb-close { position:absolute; top:12px; right:15px; display:block; width:11px; height:11px; background:url("http://cdn.kuaidi100.com/images/feedback.png") -101px -126px no-repeat }
+.fb-box .fb-errortips { position:absolute; top:5px; left:7px; color:#FF3300 }
+.fb-box textarea { position:absolute; top:28px; left:6px; padding:2px; width:231px; height:95px; border:1px solid #d0e7f3; background:#f9fcff; resize:none }
+.fb-box div { position:absolute; top:135px; left:6px; }
+.fb-box .checkbox { margin-top:2px; margin-right:5px }
+.fb-box .input { padding:0 5px; width:165px; height:24px; border:1px solid #6cb4db }
+.fb-box .fb-inputclose { position:absolute; top:8px; right:6px; display:block; width:11px; height:11px; background:url("http://cdn.kuaidi100.com/images/feedback.png") -101px -126px no-repeat }
+.fb-box .fb-submit { position:absolute; top:135px; right:17px; display:block; width:54px; height:26px; line-height:26px; text-align:center; font-weight:bold; color:#FFFFFF; background-color:#6ca8fa }
+.fb-finish a { display:block; width:140px; height:40px; background:url("http://cdn.kuaidi100.com/images/feedback.png") -4px -58px no-repeat }
+.fix-box-middle { position:fixed; top:40%; right:20px; z-index:500 }
+.fix-box-middle { _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+(document.documentElement.clientHeight)/5*2));
+_right:auto; _left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft, 10)||0)-(parseInt(this.currentStyle.marginRight, 10)||0)-20);
+}
+.ctrl-btn-1, .ctrl-btn-2, .ctrl-btn-3 { display:block; margin-bottom:18px; width:32px; height:30px }
+.ctrl-btn-1 { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -126px no-repeat }
+a.ctrl-btn-1:hover { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -256px no-repeat }
+.ctrl-btn-2 { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -176px no-repeat }
+a.ctrl-btn-2:hover { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -216px no-repeat }
+.ctrl-btn-3 { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -146px no-repeat }
+a.ctrl-btn-3:hover { background:url("http://cdn.kuaidi100.com/images/ico_header.png") 0px -276px no-repeat }
+/*用户登录*/
+.logout { color:#F21818 }
+.login { color:#333 }
+/*auto*/
+.sub-nav-box a.a-auto { position:absolute; top:0; right:14px; display:block; width:136px; height:40px; text-indent:-65535px; background:url('http://cdn.kuaidi100.com/images/a_auto.png') 10px -3px no-repeat; }

@@ -1,0 +1,96 @@
+/* 日历控件最外层div，绝对定位 */
+#divOut {
+    position: absolute;
+    width: 210px;
+    height: auto;
+    z-index: 9999;
+    text-align: left;
+    border: 1px solid #42b76b;
+	background-color: #dff;
+	font-size:14px;
+}
+
+/* 里面的所有div上下有间隔 */
+#divOut div {
+	width: auto;
+	height:auto;
+}
+
+/* 头、尾部样式  */
+#divHeader, #divFooter {
+	text-align: center;
+    background-color: #add8e6;
+}
+
+/* 年月下拉框样式 */
+#divHeader select {
+	padding: 0;
+	margin: 0;
+    border: none;
+    background-color: #dff;
+    cursor: pointer;
+}
+
+/* 年月加减按钮样式  */
+#divHeader tt {
+    padding: 0 3px;
+    font-weight: bolder;
+}
+
+/* 星期样式 */
+#divWeek {
+    background-color: #8ad0f1;
+}
+
+/* 星期和日期的样式 */
+#divWeek a, #divMain a, #divMain b {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* 当鼠标移到有事件的元素上，改变元素样式 */
+#divHeader tt:hover, #divFooter a:hover {
+    cursor: pointer;
+    color: red;
+    background-color: #89e8e9;
+}
+
+/* 脚部三个button的样式 */
+#divFooter input {
+    font-size: 14px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    margin: 0 15px;
+}
+
+/* 当前选择的日期的样式  */
+.current {
+    background-color: #89e8e9;
+}
+
+/* 周末样式  */
+.weekend {
+    color: #9f08fe;
+}
+
+/**
+ * 隐藏一个text域，响应键盘事件，改变天数
+ */
+/* 开始时宽度为1px，以免Chrome下得不到焦点 */
+#divMain input {
+    width: 1px;
+    border: 0;
+    padding: 0;
+    margin-left: -1px;
+    background-color: transparent;
+}
+/* 得到焦点时，宽度为0，使它不可见，以免Chrome下显示轮廓和光标 */
+#divMain input:focus {
+    margin-left: 0;
+    width: 0px;
+    outline: none;
+}

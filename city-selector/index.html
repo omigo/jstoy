@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<mate charset=utf8 />
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="city-selector.js"></script>
+<link rel="stylesheet" type="text/css" href="city-selector.css" />
+<script type="text/javascript">
+	$(function() {
+		citySelector('province-city-area');
+	});
+</script>
+</head>
+<body >
+	<form action="#" style="margin: 50px; padding: 10px; background: #eee">
+		<input id="province-city-area" name="province-city-area" style="margin-left: 0;"  />
+		<div id="city-selector">
+			<input type="hidden" id="province" name="province" />
+			<input type="hidden" id="city" name="city" />
+			<input type="hidden" id="area" name="area"/>
+			<ul id="city-header">
+				<li id="city-header-common">常用</li>
+				<li id="city-header-province">省份</li>
+				<li id="city-header-city">城市</li>
+				<li id="city-header-area">县区</li>
+			</ul>
+			<div id="city-content">
+				<ul id="city-common">
+					<li>上海市</li>
+					<li>深圳市</li>
+					<li>北京市</li>
+					<li>广州市</li>
+					<li>苏州市</li>
+					<li>成都市</li>
+					<li>东莞市</li>
+					<li>宁波市</li>
+					<li>天津市</li>
+					<li>杭州市</li>
+					<li>青岛市</li>
+					<li>重庆市</li>
+					<li>武汉市</li>
+					<li>郑州市</li>
+					<li>更多></li>
+				</ul>
+				<div id="city-province">
+					<span>A-G</span>
+					<ul>
+						<li>安徽</li>
+						<li>北京</li>
+						<li>重庆</li>
+						<li>福建</li>
+						<li>甘肃</li>
+						<li>广东</li>
+						<li>广西</li>
+						<li>贵州</li>
+					</ul>
+					<span>H-N</span>
+					<ul>
+						<li>海南</li>
+						<li>河北</li>
+						<li>河南</li>
+						<li>黑龙江</li>
+						<li>湖北</li>
+						<li>湖南</li>
+						<li>吉林</li>
+						<li>江苏</li>
+						<li>江西</li>
+						<li>辽宁</li>
+						<li>内蒙古</li>
+						<li>宁夏</li>
+					</ul>
+					<span>O-S</span>
+					<ul>
+						<li>青海</li>
+						<li>山东</li>
+						<li>山西</li>
+						<li>陕西</li>
+						<li>上海</li>
+						<li>四川</li>
+						<li>天津</li>
+					</ul>
+					<span>U-Z</span>
+					<ul>
+						<li>西藏</li>
+						<li>新疆</li>
+						<li>云南</li>
+						<li>浙江</li>
+					</ul>
+				</div>
+				<ul id="city-city">
+					<li>潜江市</li>
+					<li>随州市</li>
+					<li>咸宁市</li>
+					<li>恩施</li>
+					<li>天门市</li>
+					<li>神农架</li>
+					<li>仙桃市</li>
+					<li>襄阳市</li>
+					<li>黄冈市</li>
+					<li>鄂州市</li>
+					<li>荆门市</li>
+					<li>武汉市</li>
+					<li>黄石市</li>
+					<li>孝感市</li>
+					<li>十堰市</li>
+					<li>宜昌市</li>
+					<li>荆州市</li>
+				</ul>
+				<ul id="city-area">
+					<li>镜湖区</li>
+					<li>南陵县</li>
+					<li>三山区</li>
+					<li>无为县</li>
+					<li>繁昌县</li>
+					<li>弋江区</li>
+					<li>芜湖县</li>
+					<li>鸠江区</li>
+				</ul>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

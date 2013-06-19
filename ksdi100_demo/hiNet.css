@@ -1,0 +1,166 @@
+em{color:#FF6600;font-style:normal;}
+
+
+/*当前页样式*/
+.companyinfo span{margin-left:15px}
+/*城市选择*/
+.cities{position:absolute;left:5px;top:42px;z-index:111;-moz-box-shadow:2px 2px 5px rgb(51, 51, 51);}
+.inp1{width:100px;line-height:33px;font-size:14px;float:left;}
+/*查询结果*/
+.result{}
+.result .display-view{float:right;height:28px;line-height:28px;padding-left:45px;text-align:right;font-size:14px;font-weight:bold;background:url("http://cdn.kuaidi100.com/images/network/network_01.gif") no-repeat;}
+.result .count{width:560px;padding:8px 10px;background-color:#FAFAFA;float:left;line-height:22px;margin-bottom:10px}
+.result .com-count {width:400px;float:left;}
+.result .com-count .li1{float:left;width:130px;white-space:nowrap;font-size:12px;line-height:18px;height:22px;}
+.result .com-count .li1 a{float:left;text-decoration:none;padding:0px 3px;height:18px;}
+.result .com-count .li1 a:hover{float:left;text-decoration:none;padding:0px 3px;border:1px solid #FFAA7D;background-color:#FFFBD9;color:#FF7200;height:18px;}
+.result .com-count .li1 a:hover .sp2{color:#FF7200;}
+.result .com-count .li1 span{float:left;cursor:pointer;}
+.result .com-count .li1 .sp2{color:#666;}
+.result .com-count .li1-select a{float:left;text-decoration:none;padding:0px 3px;border:1px solid #FFAA7D;background-color:#FFFBD9;color:#FF7200;height:18px;}
+.result .com-count .li1-select a .sp2{color:#FF7200;}
+.result .network-list dl{float:left;width:580px;padding-bottom:10px;z-index:0;position:relative;}
+.result .network-list dl dt{float:left;width:568px;padding:0px 5px;font-weight:bold;font-size:14px;line-height:30px;border-top:1px dashed #E5E5E5;} 
+.maReg{display:inline-block;font-weight:normal;font-size:12px;font-family:SimSun;line-height:30px;vertical-align:middle;text-align:center;text-decoration:none;padding-left:40px;} 
+.maReg a{color:#FF9900;text-decoration:none;}
+.maReg a:hover{text-decoration:underline;}
+.moreKd{position:absolute;z-index:20;top:0px;right:10px;font-size:12px;}
+.result .network-list dl dt{
+margin-bottom:-4px;
+padding-bottom:0px;
+}
+.result .network-list dl dd{padding:0px 5px;line-height:25px;font-family:Arial, Helvetica, sans-serif;}/* width:520px; float:left;*/
+.result .network-list dl dd div{float:left;width:490px;}
+.result .toOrder{display:inline-block;color:#f08200;margin:5px 10px 0px 0px;border:1px solid #ffb874;width:75px;height:22px;padding-left:10px;line-height:22px;}
+.result .toOrder{background:url("http://cdn.kuaidi100.com/images/network/ico_goto.gif") 63px 5px no-repeat;}
+.result .toOrder2{background:none;}
+.result .toOrderUp{background:url("http://cdn.kuaidi100.com/images/network/ico_goto.gif") 63px -21px no-repeat;}
+.result .toOrderDown{background:url("http://cdn.kuaidi100.com/images/network/ico_goto.gif") 63px -46px no-repeat;}
+.result .pagination{margin-top:20px;}
+.example{font-size:14px;}
+.genXin{
+display:inline-block; 
+margin:0px;
+padding:0px 0px 0px 6px;
+font-weight:normal;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:#B1B0B0;
+}
+
+/*广告*/
+.adDiv-all{line-height:30px;margin-bottom:10px;}
+.adDiv-all dl{margin-left:8px}
+.adDiv-all dd{margin-left:5px}
+a.but_adm{display:block;line-height:36px;height:36px;width:81px;text-align:center;float:left;margin-right:15px}
+a.but_adm:hover{text-decoration:underline}
+a.but_adm{background:url("http://cdn.kuaidi100.com/images/network/adm/frame_05.gif") no-repeat;color:#FFF}
+a.but_adm:hover{color:#FFF}
+
+/*分页*/
+.wl-page .page,.wl-page strong,.wl-page span{display:block;float:left;width:22px;text-align:center;margin-left:5px}
+.wl-page .page{border:1px solid #DDD}
+.wl-page b{display:block;height:22px;border:1px solid #DDD;float:left;font-weight:normal;margin-left:5px}
+.page-up{background:url("http://cdn.kuaidi100.com/images/ico_page.gif") no-repeat -24px -58px;padding-right:5px;padding-left:12px;color:#B2B2B2}
+.page-up-active{background:url("http://cdn.kuaidi100.com/images/ico_page.gif") no-repeat -24px -38px;padding-right:5px;padding-left:12px;cursor:pointer;color:#008CB3}
+.page-down{background:url("http://cdn.kuaidi100.com/images/ico_page.gif") no-repeat 36px -58px;padding-right:12px;padding-left:5px;margin:0px 5px;color:#B2B2B2}
+.page-down-active{background:url("http://cdn.kuaidi100.com/images/ico_page.gif") no-repeat 36px -38px;padding-right:12px;padding-left:5px;margin:0px 5px;cursor:pointer;color:#008CB3}
+
+
+/*查询结果框*/
+.result-info{border-left:1px solid #DDD}
+.result-info th{background:url("http://cdn.kuaidi100.com/images/result_th_bg.gif") repeat-x;border:1px solid #DDD;border-left:0px}
+.result-info th,.result-info td{padding:4px 5px}
+.result-info th.nobg{border-top:0;border-left:0;border-right:1px solid #DDD;background:none}
+.result-info td{border-right:1px solid #DDD;border-bottom:1px solid #DDD}
+.result-info th.spec{border-left:1px solid #C1DAD7;border-top:0}
+.result-info th.specalt{border-left:1px solid #C1DAD7;border-top:0}
+.result-info th.width-01{width:130px}
+.result-info th.width-02{width:369px}
+.result-info .row{color:#878787}
+.send-box{border:1px solid #DDD;border-top:0;padding:8px}
+.send-box div{font-weight:bold;line-height:22px}
+.send-box hr{border:1px dotted #DDD}
+
+/*查询输入框-css*/
+#provinceSelect{position:absolute;top:0;left:0;display:block;width:156px;height:40px;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;}
+.inp-metro{ width:256px; height:18px; line-height:18px; padding:10px 8px; *padding:12px 8px 8px;font-size:14px; box-shadow:1px 1px 2px #CCC inset; border:1px solid #BCBCBC;}
+.inp-city{height:18px;width:140px;padding:10px 8px;line-height:18px;font-size:14px; box-shadow:1px 1px 2px #CCC inset; border:1px solid #BCBCBC;border-right:none;font-family:SimSun;background-color:#ffffff;}
+.vali-images{display:block;float:left;background:url("http://cdn.kuaidi100.com/images/ajax-loader_2.gif") no-repeat center;border:1px solid #DDD;height:34px;width:100px;text-align:center;margin-top:0px!important;margin-top:3px;}
+.vali-images img{cursor:pointer}
+.refresh-a{margin:10px 0px 0px 14px}
+.search-box{position:relative;}
+.input-tips{position:absolute;z-index:666;top:40px;left:157px;display:none;width:305px;border-left:1px solid #BCBCBC;border-right:1px solid #BCBCBC;border-bottom:1px solid #BCBCBC;background-color:#fff;*top:41px;_top:42px; }
+.input-tips li{padding-left:5px;width:300px;height:30px;line-height:30px;overflow:hidden;cursor:pointer;color:#999;}
+.input-tips li strong{margin-right:5px;font-size:14px;color:#333;}
+.input-tips li.hover{background-color:#eee;}
+
+/*-----------------------------新增的css 20130508----------------------------*/
+/*-----  发件地弹出层 ---//start-------*/
+/*选择城市框*/
+.hidden{display:none} 
+.location_box02{
+position:absolute;
+z-index:889;
+left:0px;
+top:40px;
+width:280px; 
+line-height:26px;
+font-size:12px; 
+color:#666;
+border:1px solid #CCC;
+box-shadow:1px 1px 4px #333333;
+display:none;
+overflow:hidden;
+}
+.location-box{
+background-color:#67A1E2;
+}
+.bcwhite{
+background-color:#fff;
+}
+.defin{
+padding: 8px 8px;
+}
+.location-box ul.tab-list{position:relative;height:25px;background-color:#67A1E2}
+.location-box li.tab{position:absolute;top:0;width:70px;height:25px;text-align:center;line-height:25px;}
+.location-box li.li-common{left:0}
+.location-box li.li-province{left:70px}
+.location-box li.li-city{left:140px}
+.location-box li.li-county{left:210px}
+.location-box li.select-tab{	
+position:absolute;
+top:0;
+left:-1px;
+width:70px;
+height:25px;
+background-color:#fff;
+border-left:1px solid #CCC;
+border-right:1px solid #CCC;
+}
+.location-box li.tab a{font-size:14px;color:#FFF}
+.location-box li.select a{font-weight:bold;color:#39F}
+.location-box div.tab-box{padding:6px 4px 6px 8px;}
+.location-box a.place{display:inline-block;height:20px;padding:0 3px;margin:2px 3px;text-align:left;line-height:20px;color:#666;border:1px solid #FFF}
+.location-box a.place:hover{background-color:#DEF;border:1px solid #69F;text-decoration:none}
+.location-box a.city{width:auto}
+.location-box a.county{width:auto}
+.location-box a.select{background-color:#06C;color:#FFF}
+.location-box a.select:hover{background-color:#06C;color:#FFF}
+.location-box .province-box{	 
+width:280px;
+_width:290px;
+overflow:hidden; 
+}
+.location-box .province-box dl{
+display:block;
+margin:0px 0px 5px 0px;
+padding:0px;
+width:100%;
+height:50px;
+}
+.location-box .province-box dt{width:30px;padding:0px 0 0 2px;text-align:left;color:#39F;float:left;}
+.location-box .province-box dd{width:240px;float:left;overflow:hidden;}
+.location-box .province-box a.place{margin:2px 0px;}
+/*-----  发件地弹出层 ---//end-------*/
+

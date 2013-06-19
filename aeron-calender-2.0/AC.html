@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Conten-Type" content="text/html; charset=utf8"/>
+        <link rel="stylesheet" href="AC.css" type="text/css" />
+        <script type="text/javascript" src="AC.js"></script>
+        <style tyle="text/css">
+            body {
+                background-color: #ddffff;
+                text-align: center;
+                font-size: 16px;
+            }
+            
+            .middle {
+                margin: 100px auto;
+                color: #005;
+				text-align: left;
+            }
+            
+            .middle tr {
+                height: 50px;
+            }
+			.middle div {
+				width: 400px;
+				line-height: 1.5;
+			}
+			.middle div b {
+				float: left;
+				font-size:2em;
+			}
+        </style>
+        <script type="text/javascript">
+            window.onload = function(){
+                document.getElementsByTagName("input")[0].focus();
+            }
+        </script>
+    </head>
+    <body>
+        <table class="middle">
+            <tr>
+                <td>
+                    <label for="date">按任意键弹出日历：</label>
+                </td>
+                <td>
+                    <input type="text" onkeyup="MyCalender.getInstance().main(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">单击时弹出日历：</label>
+                </td>
+                <td>
+                    <input type="text" onclick="new AC(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">鼠标移动到文本框上：</label>
+                </td>
+                <td>
+                    <input type="text" onmouseover="new AC(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">双击时弹出日历：</label>
+                </td>
+                <td>
+                    <input type="text" value="2009-03-23" ondblclick="new AC(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">获得焦点时弹出日历：</label>
+                </td>
+                <td>
+                    <input type="text" value="2009-03-23" onfocus="new AC(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div><b>说 明：</b>当年、月、日获得焦点时，可以用方向键选择年、月、日，Enter键快速插入当前选中的日期。也可以用鼠标单击年、月文本框，弹出下拉框，选择年、月，在日期上移动选择日期，单击可插入当前选中的日期（鼠标所在的日期）。</div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
